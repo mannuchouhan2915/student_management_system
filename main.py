@@ -1,6 +1,6 @@
 # student management system 
 # features 
-
+import random
 """1. Add Student
 2. View All Students
 3. Search Student
@@ -16,13 +16,29 @@ print("""  1. Add Student
            4. Update Student 
            5. Delete Student 
            6. Exit """)
-
+student_dict={}
 still = 'yes'
 choice=int(input("enter your choice : "))
+
 def add_student():
-    pass 
+    student_id = int(input('enter student id : '))
+    if student_id in student_dict:
+        print('student of this id is already exists ....')
+        print(student_dict[student_id])
+    else:
+        student_name=input('enter name : ')
+        age=int(input('enter age : '))
+        course = input('enter course : ')
+        student_dict[student_id]={'Id ':student_id ,'Name':student_name ,'Age': age, 'Course':course}
+        print("student added successfully...!")
 def view_all_student():
-    pass
+    if len(student_dict) == 0:
+        print("student list is empty")
+    else:
+        for k,v in student_dict.items():
+            print(k," = " ,v)
+
+        
 def search_student():
     pass
 def update_student():
@@ -48,9 +64,11 @@ while still !="no":
     else :
         print(" your choice is worng ...")
     
-    print(" do you want to continue : 'yes / no'")
-    ans = input()
-    still = ans 
+   
+    still = input(" do you want to continue : 'yes / no'\n")
+    if still =='yes':
+        choice = int(input('enter choice : '))
+    
         
     
     
