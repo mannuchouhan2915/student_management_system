@@ -1,0 +1,81 @@
+# student management system 
+# features 
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+
+------------------------------
+Feature 1: Add Student
+
+I should be able to enter:
+
+Student ID
+Student Name
+Age
+Course
+
+------------------------------
+Feature 2: View All Students
+
+When selected, display all students in a readable format.
+
+------------------------------
+Feature 3: Search Student
+
+I want to search using Student ID.
+
+------------------------------
+Feature 4: Update Student
+
+Suppose I entered wrong information.
+Then allow changing the details.
+
+
+------------------------------
+Feature 5: Delete Student
+using student id if exists.
+
+------------------------------
+Feature 6: Exit
+Thank you for using Student Management System.
+
+------------------------------
+this operation will be continue until user no to say 'no' 
+
+
+------------------------------
+Mandatory
+
+✅ Menu driven program
+
+✅ Functions should be used
+
+✅ Student IDs should be unique
+
+✅ Search by ID
+
+✅ Update and delete by ID
+
+✅ Program should not crash for wrong menu choices
+
+------------------------------
+Sample Scenario:
+
+Add Student
+101 Rahul 20 AIML
+
+Add Student
+102 Priya 19 CSE
+
+View Students
+
+Search 101
+
+Update 102
+
+Delete 101
+
+Exit
